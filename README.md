@@ -12,12 +12,12 @@ O objetivo é **minimizar o custo total** de construção de um tanque cilíndri
 
 ### Função Objetivo:
 
-![Função Objetivo](https://latex.codecogs.com/png.latex?C(D%2C%20L)%20%3D%204.5%20%5Ccdot%20m(D%2C%20L)%20%2B%2020%20%5Ccdot%20%5Cell_w(D))
+![Função Objetivo](https://latex.codecogs.com/png.latex?%5Ccolor%7Bwhite%7D%20C(D%2C%20L)%20%3D%204.5%20%5Ccdot%20m(D%2C%20L)%20%2B%2020%20%5Ccdot%20%5Cell_w(D))
 
 
 ### Restrições:
 
-![Restrições](https://latex.codecogs.com/png.latex?0.9V_0%20%5Cleq%20%5Cfrac%7B%5Cpi%20D%5E2%7D%7B4%7D%20L%20%5Cleq%201.1V_0%2C%20%5Cquad%20D%20%5Cleq%201%2C%20%5Cquad%20L%20%5Cleq%202)
+![Restrições](https://latex.codecogs.com/png.latex?%5Ccolor%7Bwhite%7D%200.9V_0%20%5Cleq%20%5Cfrac%7B%5Cpi%20D%5E2%7D%7B4%7D%20L%20%5Cleq%201.1V_0%2C%20%5Cquad%20D%20%5Cleq%201%2C%20%5Cquad%20L%20%5Cleq%202)
 
 
 ## Funcionalidades
@@ -60,11 +60,11 @@ The objective is to **minimize the total cost** of building a cylindrical tank, 
 
 ### Objective Function:
 
-![Objective Function](https://latex.codecogs.com/png.latex?C(D%2C%20L)%20%3D%204.5%20%5Ccdot%20m(D%2C%20L)%20%2B%2020%20%5Ccdot%20%5Cell_w(D))
+![Objective Function](https://latex.codecogs.com/png.latex?%5Ccolor%7Bwhite%7D%20C(D%2C%20L)%20%3D%204.5%20%5Ccdot%20m(D%2C%20L)%20%2B%2020%20%5Ccdot%20%5Cell_w(D))
 
 ### Constraints:
 
-![Constraints](https://latex.codecogs.com/png.latex?0.9V_0%20%5Cleq%20%5Cfrac%7B%5Cpi%20D%5E2%7D%7B4%7D%20L%20%5Cleq%201.1V_0%2C%20%5Cquad%20D%20%5Cleq%201%2C%20%5Cquad%20L%20%5Cleq%202)
+![Constraints](https://latex.codecogs.com/png.latex?%5Ccolor%7Bwhite%7D%200.9V_0%20%5Cleq%20%5Cfrac%7B%5Cpi%20D%5E2%7D%7B4%7D%20L%20%5Cleq%201.1V_0%2C%20%5Cquad%20D%20%5Cleq%201%2C%20%5Cquad%20L%20%5Cleq%202)
 
 ##  Features
 
