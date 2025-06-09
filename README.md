@@ -21,7 +21,7 @@ O objetivo é **minimizar o custo total** de construção de um tanque cilíndri
 
 
 ## Funcionalidades
-
+    
 A aplicação foi desenvolvida com uma interface moderna e intuitiva usando `CustomTkinter` e segue o padrão de arquitetura **MVC**.
 
 ### Funcionalidades obrigatórias (do enunciado):
