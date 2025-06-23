@@ -7,7 +7,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 from matplotlib.figure import Figure
 import threading
 
-from model.tank_model import Parameters, TankOptimizer  # IMPORTANTE: precisa ajustar o path conforme seu projeto
+from model.tank_model import Parameters, TankOptimizer
 
 class OptimizationGUI:
     def __init__(self, root):
@@ -33,7 +33,7 @@ class OptimizationGUI:
         main_frame.grid_columnconfigure(0, weight=1)
         main_frame.grid_rowconfigure(1, weight=1)
 
-        # --- Top Frame for Title and Theme Button ---
+        
         top_frame = ctk.CTkFrame(main_frame)
         top_frame.grid(row=0, column=0, sticky="ew", padx=10, pady=(10, 0))
         top_frame.grid_columnconfigure(0, weight=1)
@@ -43,11 +43,11 @@ class OptimizationGUI:
         self.theme_button = ctk.CTkButton(top_frame, text="🌙 Tema Escuro", command=self.toggle_theme, width=150)
         self.theme_button.grid(row=0, column=1, padx=10)
 
-        # --- Content Frame using Grid ---
+        
         content_frame = ctk.CTkFrame(main_frame)
         content_frame.grid(row=1, column=0, sticky="nsew", padx=10, pady=10)
-        content_frame.grid_columnconfigure(0, weight=0)  # Left panel, fixed width
-        content_frame.grid_columnconfigure(1, weight=1)  # Right panel, expandable
+        content_frame.grid_columnconfigure(0, weight=0)  
+        content_frame.grid_columnconfigure(1, weight=1)  
         content_frame.grid_rowconfigure(0, weight=1)
         
         left_panel = ctk.CTkFrame(content_frame, width=380)
@@ -61,8 +61,8 @@ class OptimizationGUI:
         
     def setup_left_panel(self, parent):
         """Configura o painel esquerdo com parâmetros e controles."""
-        parent.grid_rowconfigure(1, weight=5) # Settings
-        parent.grid_rowconfigure(3, weight=4) # Results
+        parent.grid_rowconfigure(1, weight=5) 
+        parent.grid_rowconfigure(3, weight=4) 
         
         ctk.CTkLabel(parent, text="Configurações", font=ctk.CTkFont(size=18, weight="bold")).grid(row=0, column=0, pady=(10, 5), padx=10, sticky="ew")
         
@@ -105,7 +105,7 @@ class OptimizationGUI:
         
         ctk.CTkLabel(method_frame, text="Configurações dos Métodos", font=ctk.CTkFont(size=14, weight="bold")).pack(pady=(10, 5))
 
-        # Helper function to create entries
+        
         def create_entry(parent, label_text, var):
             frame = ctk.CTkFrame(parent)
             frame.pack(fill="x", padx=5, pady=3)
@@ -182,14 +182,14 @@ class OptimizationGUI:
             frame.grid_rowconfigure(0, weight=1)
             frame.grid_columnconfigure(0, weight=1)
 
-        # Gráfico de curvas de nível
+        
         configure_plot_frame(self.contour_frame)
         self.fig_contour = Figure(figsize=(8, 6), dpi=100)
         self.ax_contour = self.fig_contour.add_subplot(111)
         self.canvas_contour = FigureCanvasTkAgg(self.fig_contour, self.contour_frame)
         self.canvas_contour.get_tk_widget().grid(row=0, column=0, sticky="nsew")
         
-        # Gráfico de convergência
+        
         configure_plot_frame(self.convergence_frame)
         self.fig_conv = Figure(figsize=(8, 6), dpi=100)
         self.ax_conv = self.fig_conv.add_subplot(111)
