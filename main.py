@@ -9,7 +9,7 @@ def main():
     except Exception as e:
         root = tk.Tk()
         root.withdraw()
-        messagebox.showerror("Erro Fatal", f"Não foi possível iniciar a aplicação:\n{e}")
+        messagebox.showerror(f"Não foi possível iniciar a aplicação:\n{e}")
 
 if __name__ == "__main__":
     main()
