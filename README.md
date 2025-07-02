@@ -36,8 +36,6 @@ A aplicação foi desenvolvida com uma interface moderna e intuitiva usando `Cus
 
 - [x] Renderização gráfica moderna com suporte a temas escuro/claro
 - [x] Validação em tempo real das entradas
-- [x] Imagem ilustrativa do tanque embutida na interface
-- [x] Tabela com evolução iterativa completa (scrollable)
 - [x] Arquitetura modular (MVC) que facilita manutenção e extensões futuras
 
 
@@ -78,6 +76,4 @@ The application is built with a modern and intuitive interface using `CustomTkin
 
 - [x] Modern graphical rendering with support for dark/light themes
 - [x] Real-time validation of inputs
-- [x] Illustrative image of the tank embedded in the interface
-- [x] Table with complete iterative evolution (scrollable)
 - [x] Modular architecture (MVC) that facilitates maintenance and future extensions
